@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="modal">
+      <a href="#" class="modal__link">run popup</a>
+      <div class="modal__window hide">
+        <a class="modal__close-item" data-modal="close" href="">
+          <img src="images/icon-popup-close.svg" alt="">
+        </a>
+        <img class="modal__alert-image" src="images/icon-warning_notify-red.svg" alt=""/>
+        <p class="modal__alert-message">Are you sure you want to uinstall the Shasam app</p>
+        <div class="modal__buttons">
+          <button class="modal__close-modal" data-modal="close">Cancel</button>
+          <button class="modal__uninstall-modal" data-modal="alert">uninstall</button>
+        </div>     
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

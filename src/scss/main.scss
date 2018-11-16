@@ -1,0 +1,88 @@
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-bottom: 400px;
+
+  &__window {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin: auto;
+    margin-top: 30px;
+    background-color: white;
+    font-family: "Open Sans";
+    border: 2px solid white;
+    border-radius: 3%;
+    animation: slideDown 0.1s;
+  }
+
+  &__close-item {
+    align-self: flex-start;
+    margin: 20px;
+  }
+
+  &__close-item * {
+    width: 200%;
+  }
+
+  &__alert-image {
+    width: 25%;
+  }
+
+  &__alert-message {
+    width: 80%;
+    text-align: center;
+    font-size: 2vw;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 3% 0 10% 0;
+  }
+
+  &__close-modal {
+    width: 45%;
+    background-color: white;
+    border: 2px solid gray;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  &__uninstall-modal {
+    width: 45%;
+    background-color: red;
+    color: white;
+    border: 2px solid red;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+}
+
+.back-color {
+  background-color: rgba(0, 0, 0, 0.62);
+}
+
+.hide {
+  display: none;
+}
+
+@keyframes slideDown {
+  0% {
+    margin-top: -100px;
+  }
+  50% {
+    margin-top: -20px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
